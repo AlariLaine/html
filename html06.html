@@ -1,81 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
 <head>
-    <link rel="shortcut icon" href="img/favico.ico" />
-	<title>ÜLESANNE 6</title>
-	<meta name="keywords" content="HTML,CSS,HTML5,CSS3" />
-  <meta name="autor" content="Alari Laine IT-23" />
-	<meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/favico.ico">
+    <title>ÜLESANNE 6</title>
+    <meta name="keywords" content="HTML,CSS,HTML5,CSS3">
+    <meta name="author" content="Alari Laine IT-23">
+    <meta charset="UTF-8">
 </head>
 <body>
-    <table>
-        <tbody>
-            <form action="#" method="get">
-                    <tr>
-                        <td>Kasutajanimi</td>
-                        <td>
-                            <input name="otsing" type="text" maxlength="6"
-                                placeholder="maks pikkus 6"><br>
-                        </td>
-                    </tr>
-                </tbody>
 
-                <tbody>
-                    <tr>
-                        <td>Kursus</td>
-                        <td><input name="otsing" type="text" maxlength="3"
-                                placeholder="max pikkus 3"><br></td>
-                    </tr>
-                    <tr>
-                        <td>Osakonna number</td>
-                        <td>
-                            <label>Vali number: </label>
-                            <input type="number" value="1" min="1" max="5"
-                                step="1">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Parool</td>
-                        <td>
-                            <input name="otsing" type="password"><br>
-                        </td>
-                    </tr> 
-                    <tr>
-                        <td>Vali teenus</td>
-                        <td>
-                            <select>
-                                <option value>-- Vali teenus --</option>
-                                <option value="odav">Odav 20€</option>
-                                <option value="keskmine">Keskmine 40€</option>
-                                <option value="kallis">Kallis 60€</option>
-                            </select>
-                        </td>
-                    </tr>
-                <tr>
-                    <td>Roll</td>
-                    <td>
-                        <input type="radio" name="varv" value="Admin">Admin<br>
-                        <input type="radio" name="varv"
-                            value="Moderaator">Moderaator<br>
-                        <input type="radio" name="varv" value="User">User<br>
-                    </td>
-                </tr>
+    <form action="#" method="get">
+        <table>
+            <tr>
+                <td>Kasutajanimi</td>
+                <td>
+                    <input name="kasutajanimi" type="text" maxlength="6" placeholder="maks pikkus 6">
+                </td>
+            </tr>
+            <tr>
+                <td>Kursus</td>
+                <td>
+                    <input name="kursus" type="text" maxlength="3" placeholder="max pikkus 3">
+                </td>
+            </tr>
+            <tr>
+                <td>Osakonna number</td>
+                <td>
+                    <label>Vali number: </label>
+                    <input type="number" name="osakond" value="1" min="1" max="5" step="1">
+                </td>
+            </tr>
+            <tr>
+                <td>Parool</td>
+                <td>
+                    <input name="parool" type="password">
+                </td>
+            </tr> 
+            <tr>
+                <td>Vali teenus</td>
+                <td>
+                    <select name="teenus">
+                        <option value="">-- Vali teenus --</option>
+                        <option value="odav">Odav 20€</option>
+                        <option value="keskmine">Keskmine 40€</option>
+                        <option value="kallis">Kallis 60€</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Roll</td>
+                <td>
+                    <input type="radio" name="roll" value="Admin">Admin<br>
+                    <input type="radio" name="roll" value="Moderaator">Moderaator<br>
+                    <input type="radio" name="roll" value="User">User
+                </td>
+            </tr>
+            <tr>
                 <td>Nõustun tingimustega</td>
                 <td>
-                    <input value="ora" name="soevarv" type="checkbox"><br>
+                    <input type="checkbox" name="tingimused" value="jah"> Jah
                 </td>
-                <tr>
-                    <td>Enesetutvustus: </td>
-                    <td>
-                        <textarea rows="20"
-                            cols="50"></textarea><br>
-                    </td>
-                </tr>
-                <tr>
-                    <td><input type="reset" value="Kustuta"></td>
-                    <td><input type="submit" value="Saada"></td>
-                </tr>
-            </form>
-        </tbody>
-    </table>
+            </tr>
+            <tr>
+                <td>Enesetutvustus:</td>
+                <td>
+                    <textarea name="enesetutvustus" rows="10" cols="50"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Kustuta"></td>
+                <td><input type="submit" value="Saada"></td>
+            </tr>
+        </table>
+    </form>
+
 </body>
+</html>
